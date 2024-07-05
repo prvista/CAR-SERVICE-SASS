@@ -1,0 +1,107 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.aboutFeature {
+    &__title{
+        background-color: $clr-secondary;
+        padding: 4rem 5rem 0 5rem;
+
+        h2{
+
+        }
+    }
+
+    &__wrapper {
+        background-color: $clr-secondary;
+        // padding: 54px 0 85px;
+        padding: 4rem 5rem;
+        @include grid(4, 5rem);
+    }
+
+    &__card{
+        text-align: center;
+        h2{
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        p{
+            padding: 1rem 0;
+            margin-bottom: 3rem;
+        }
+
+        .btn {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+
+    }
+
+
+}
+
+.aboutHistory{
+    padding-top: 1.5rem;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+        padding: 4rem 5rem;
+        background-color: $clr-primary;
+    }
+
+    &__opportunity{
+        p{
+            span{
+                cursor: pointer;
+                color: #fca8ac;
+                transition: 0.2s ease;
+                &:hover{
+                    color: $clr-dark;
+                    transition: 0.2s ease;
+                }
+            }
+        }
+    }
+}
+
+.aboutTeam{
+    padding-top: 1.5rem;
+    &__title{
+        padding: 4rem 5rem 0 5rem;
+        h2{
+            color: $clr-dark;
+        }
+    }
+
+    &__wrapper{
+        background-color: $clr-light;
+        padding: 4rem 5rem 9rem 5rem;
+        @include grid(4, 2rem)
+    }
+
+    &__card{
+        small{
+            color: $clr-primary;
+            cursor: pointer;
+
+            &:hover{
+                color: $clr-dark;
+                transition: 0.2s ease;
+            }
+        }
+
+        p{
+            color: $clr-dark;
+            span{
+                cursor: pointer;
+                text-decoration: underline;
+
+                &:hover{
+                    color: $clr-primary;
+                }
+            }
+        }
+    }
+}

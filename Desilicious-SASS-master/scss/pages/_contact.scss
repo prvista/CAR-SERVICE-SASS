@@ -1,0 +1,107 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.contact {
+    &__wrapper{
+        background-color: $clr-light;
+        @include grid (2, 0);
+        padding: 7rem 4rem 6rem 4rem;
+    }
+
+    &__text{
+        width: 30rem;
+        margin: 0 auto;
+        h4{
+            color: $clr-primary;
+            font-weight: 500;
+            margin-top: 3rem;
+            cursor: pointer;
+            &:hover{
+                color: $clr-dark;
+            }
+        }
+
+        h2{
+            font-size: 2.4rem;
+            color: $clr-dark;
+            font-weight: 500;
+        }
+
+        p{
+            color: $clr-dark;
+        }
+    }
+
+    &__form{
+        h2{
+            font-size: 2.4rem;
+            color: $clr-dark;
+            font-weight: 500;
+        }
+    }
+
+    &__input{
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+        ::placeholder{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        input[type=text] , active{
+            max-width: 100%;
+            width: 30rem;
+            margin: .5rem 0;
+            border: 1px solid #d9d9db;
+            background: transparent;
+            padding: 1rem;
+            color: $clr-dark;
+            height: 2.5rem;
+
+            &:focus{
+                box-shadow: rgb(250, 133, 138, 0.3) 0px 3px 24px;
+
+                &::placeholder{
+                    color: #d9d9db;
+                }
+            }
+        }
+
+        textarea {
+            border: 1px solid #d9d9db;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background: transparent;
+            padding: 1rem 1rem;
+            max-width: 40rem;
+            min-width: 40rem;
+            width: 70rem;
+            height: 12rem;
+            max-height: 20rem;
+            margin: 1rem 0;
+            color: $clr-dark;
+            resize: none;
+
+            &:focus{
+                box-shadow: rgb(250, 133, 138, 0.3) 0px 3px 24px;
+
+                &::placeholder{
+                    color: #d9d9db;
+                }
+            }
+        }
+    }
+
+    &__button{
+        display: flex;
+        flex-direction: row;
+        gap: 1.2rem;
+        justify-content: right;
+        margin-top: 4rem;
+
+        .btn{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
+}

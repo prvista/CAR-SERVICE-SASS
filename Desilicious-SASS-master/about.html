@@ -5,9 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Services About</title>
     <link rel="stylesheet" href="../dist/css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" href="./img/logo.png">
 </head>
-<body>
+<body class="bg--dark">
+    <!-- header -->
+    <header class="header bg--dark">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="branding">
+                    <img src="./img/logo.png" alt="">
+                </div>
+
+                <nav>
+                    <ul class="header__nav">
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a id="active" href="#">ABOUT</a></li>
+                        <li><a href="./services.html">SERVICE</a></li>
+                        <li><a href="./blog.html">BLOG</a></li>
+                        <li><a href="./contact.html">CONTACTS</a></li>
+                    </ul>
+                </nav>
+
+                <select name="header" id="header">
+                    <option value="home"><a href="./index.html">HOME</a></option>
+                    <option value="about">ABOUT</option>
+                    <option value="mercedes">SERVICE</option>
+                    <option value="audi">BLOG</option>
+                    </select>
+            </div>
+        </div>
+    </header>
+    <!-- about feature -->
+    <section class="aboutFeature">
+        <div class="container">
+            <div class="aboutFeature__title">
+                <h2 class="title">FEATURES</h2>
+                <span class="line"></span>
+            </div>
+            <div class="aboutFeature__wrapper">
+
+                <div class="aboutFeature__card">
+                    <h2>NEQUE PORO QUIS</h2>
+                    <p>Cubilipende sollicitudineed leo pharea aumennec in velit veaugun e diam lor innia est. Proin dictum elem velit Fterdpibus sceleue vitaepe.</p>
+                    <a href="" class="btn bg--primary">MORE</a>
+                </div>
+                <div class="aboutFeature__card">
+                    <h2>SED UT PERSP</h2>
+                    <p>Sollicitudineied leo pharetr in velit eaugun eratisque diam lor innia est. Proin dicm elemtum veitdpibu sceleue vita pedeecon era.</p>
+                    <a href="" class="btn bg--primary">MORE</a>
+                </div>
+                <div class="aboutFeature__card">
+                    <h2>UT PHARETRA AUGUE</h2>
+                    <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugun eraam lor innia est. Proin dictum elem velit Fterdpibus sceleue vitaepe.
+                    </p>
+                    <a href="" class="btn bg--primary">MORE</a>
+                </div>
+                <div class="aboutFeature__card">
+                    <h2>MAECEN TRISTIQU</h2>
+                    <p>Sollicitudineied leo pharetr in velit eaugun eratisque diam lor innia est. Proin dicm elemtum veitdpibu sceleue vita pedeecon era.</p>
+                    <a href="" class="btn bg--primary">MORE</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- about history   -->
+    <section class="aboutHistory">
+        <div class="container">
+            <div class="aboutHistory__wrapper">
+
+                <div class="aboutHistory__history">
+                    <h2 class="title">OUR HISTORY</h2>
+                    <span class="line"></span>
+                    <p class="mt--3">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus. Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque.</p>
+                    <br>
+                    <p>Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Suspendisse sollicitudin velit sed leo. Ut pharetra augue nec augue. Nam elit magna, hendrerit sit amet, tincidunt ac, viverra sed, nulla. Donec porta diam eu massa. Quisque diam lorem.</p>
+                </div>
+
+                <div class="aboutHistory__opportunity">
+                    <h2 class="title">OPPORTUNITIES</h2>
+                    <span class="line"></span>
+                    <p class="mt--3">
+                        <span>Neque porro quisquam est tempora incidu</span><br>
+                        Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi.
+                    </p>
+
+                    <p class="mt--2">
+                        <span>Quis autem vel eum iure reprehe</span><br>
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui.
+                    </p>
+
+                    <p class="mt--2">
+                        <span>Ut enim ad minima veniam quis nost fugiat quo</span><br>
+                        Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique or. Cum sociis natoque penatibus et magnis dis parturient montes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutTeam">
+        <div class="container">
+            <div class="aboutTeam__title bg--light">
+                <h2 class="title">OUR TEAM</h2>
+                <span class="line bg--dark"></span>
+            </div>
+            <div class="aboutTeam__wrapper">
+
+                <div class="aboutTeam__card">
+                    <img src="./img/page2_pic1.jpg" alt="">
+                    <small>Mark Johnson</small>
+                    <p>Proin dictum elemum velit terdpib sceleue vitaepeecon eoc in <span>...</span></p>
+                </div>
+                <div class="aboutTeam__card">
+                    <img src="./img/page2_pic2.jpg" alt="">
+                    <small>Fade Harper</small>
+                    <p>Proin dictum elemum velit terdpib sceleue vitaepeecon eoc in <span>...</span></p>
+                </div>
+                <div class="aboutTeam__card">
+                    <img src="./img/page2_pic3.jpg" alt="">
+                    <small>John McCoist</small>
+                    <p>Proin dictum elemum velit terdpib sceleue vitaepeecon eoc in <span>...</span></p>
+                </div>
+                <div class="aboutTeam__card">
+                    <img src="./img/page2_pic4.jpg" alt="">
+                    <small>Sam Kromstain</small>
+                    <p>Proin dictum elemum velit terdpib sceleue vitaepeecon eoc in <span>...</span></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+
+                <div class="footer__social">
+                    <p>Car service © 2024 • <a href="./privacy.html">Privacy Policy</a></p>
+                    <ul class="footer__icons">
+                        <li><a href=""><i class="fa-brands fa-google"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__location">
+                    <p>
+                        9863 - 9867 Mill Road,
+                        Cambridge, MG09 99HT
+                        Freephone: +1 800 559 6580
+                    </p>
+                    <p>
+                        9863 - 9867 Mill Road,
+                        Cambridge, MG09 99HT
+                        Freephone: +1 800 559 6580
+                    </p>
+                </div>
+
+                <div class="footer__maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.788160216418!2d120.9936143757407!3d14.554103378212098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c965aa9b8243%3A0xabb4d078626156ed!2sMcDonald&#39;s%20Buendia%20Pasay!5e0!3m2!1sen!2sph!4v1720140585112!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+      </footer>
+
+
 
 </body>
 </html>

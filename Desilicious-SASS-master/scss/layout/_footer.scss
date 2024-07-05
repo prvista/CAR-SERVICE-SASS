@@ -1,3 +1,71 @@
 @use "../abstract/" as *;
 @use "../base/" as *;
 
+.footer {
+    padding: 1.5rem 0;
+    &__wrapper {
+        @include grid (3, 1rem);
+        // align-items: center;
+    }
+    &__social {
+        margin-left: 5rem;
+        gap: 2rem;
+        margin-top: 3rem;
+
+        p {
+            margin-bottom: 2rem;
+            color: #89888c;
+
+            a{
+                color: #89888c;
+                transition: 0.3s ease;
+                &:hover{
+                    color: $clr-primary;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+    &__icons {
+        display: flex;
+        gap: 1rem;
+
+
+        li {
+            i {
+                border: 2px solid $clr-light;
+                padding: 1rem;
+                border-radius: 5rem;
+                color: $clr-light;
+                font-size: .8rem;
+                transition: 0.3s ease;
+
+                &:hover{
+                    background-color: $clr-primary;
+                    border: 2px solid $clr-primary;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+
+    &__location {
+        margin-top: 3rem;
+        margin-left: 30px;
+
+        p{
+            color: #89888c;
+            width: 11rem;
+            &:nth-child(2){
+                margin-top: 33px;
+            }
+        }
+    }
+
+    &__maps {
+        iframe{
+            height: 20rem;
+            width: 45rem;
+        }
+    }
+}

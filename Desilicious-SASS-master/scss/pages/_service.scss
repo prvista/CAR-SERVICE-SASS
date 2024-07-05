@@ -1,0 +1,62 @@
+@use "../abstract/" as *;
+@use "../base/" as *;
+
+.price{
+    h2{
+        color: $clr-dark;
+    }
+
+    h3{
+        color: $clr-primary;
+        margin-top: 2rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover{
+            color: $clr-dark;
+            transition: 0.3s ease;
+        }
+    }
+
+    p {
+        color: $clr-dark;
+    }
+
+        &__report{
+            p {
+                margin-top: 0.5rem;
+            }
+        }
+        &__wrapper{
+            background-color: #fcfaf2;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            color: $clr-dark;
+            padding: 4rem 5rem 9rem 5rem;
+        }
+
+        &__list{
+            .price__prices{
+                margin-top: 1.5rem;
+                @include grid (3, 2rem);
+
+                ul {
+                    li{
+                        cursor: pointer;
+                        transition: 0.3s ease;
+                        &:hover{
+                            color: $clr-primary;
+                            transition: 0.3s ease;
+                            span{
+                                color: $clr-dark;
+                            }
+                        }
+                    }
+                }
+            }   
+
+        }
+}
+
