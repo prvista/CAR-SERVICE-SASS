@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- slider -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <link rel="icon" href="./img/logo.png">
+    <link rel="icon" href="./img/logo.ico">
+
+
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg--dark">
     <!-- header -->
@@ -20,12 +24,12 @@
                 </div>
 
                 <nav>
-                    <ul class="header__nav">
+                    <ul class="header__nav" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
                         <li><a id="active" href="#">HOME</a></li>
                         <li><a href="./about.html">ABOUT</a></li>
                         <li><a href="./services.html">SERVICE</a></li>
                         <li><a href="./blog.html">BLOG</a></li>
-                        <li><a href="">CONTACTS</a></li>
+                        <li><a href="./contact.html">CONTACTS</a></li>
                     </ul>
                 </nav>
 
@@ -75,7 +79,7 @@
       <section class="service">
         <div class="container">
           <div class="service__wrapper">
-            <div class="service__card hover-service">
+            <div class="service__card hover-service" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
               <h2>Complete Service</h2>
               <i class="fa fa-cogs"></i>
               <p>
@@ -86,7 +90,7 @@
               <a href="#" class="btn bg--primary">MORE</a>
               <span class="hover_plane"></span>
             </div>
-            <div class="service__card hover-service">
+            <div class="service__card hover-service" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="600">
               <h2>OIL CHANGE</h2>
               <i class="fa-solid fa-droplet"></i>
               <p>
@@ -95,7 +99,7 @@
               <a href="#" class="btn bg--primary">MORE</a>
               <span class="hover_plane"></span>
             </div>
-            <div class="service__card hover-service">
+            <div class="service__card hover-service" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"  data-aos-duration="600">
               <h2>ENGINE REPAIR</h2>
               <i class="fa fa-filter"></i>
               <p>
@@ -106,7 +110,7 @@
               <a href="#" class="btn bg--primary">MORE</a>
               <span class="hover_plane"></span>
             </div>
-            <div class="service__card hover-service">
+            <div class="service__card hover-service" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
               <h2>SCHEDULED MAINTENANCE</h2>
               <i class="fa fa-wrench"></i>
               <p>
@@ -118,12 +122,13 @@
           </div>
         </div>
       </section>
+
       <!-- SERVICE SLIDER -->
       <section class="serviceSlider">
         <div class="container"> 
             <div class="serviceSlider__title">
                 <h2>SERVICES</h2>
-                <span class="line"></span>
+                <span class="line--primary"></span>
             </div>
             <div class="serviceSlider__wrapper">
 
@@ -131,41 +136,47 @@
                 <div class="serviceSlider__content">
 
                     
-                    <div class="serviceSlider__card">
+                    <div class="serviceSlider__card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="7000">
                         <img src="./img/page1_pic1.jpg" alt="">
                         <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
                     </div>
-                    <div class="serviceSlider__card">
+                    <div class="serviceSlider__card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="7000">
                         <img src="./img/page1_pic2.jpg" alt="">
                         <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
                     </div>
-                    <div class="serviceSlider__card">
+                    <div class="serviceSlider__card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="7000">
                         <img src="./img/page1_pic3.jpg" alt="">
                         <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
                     </div>
-                    <div class="serviceSlider__card">
+                    <div class="serviceSlider__card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="7000">
                         <img src="./img/page1_pic1.jpg" alt="">
                         <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
                     </div>
-                    <div class="serviceSlider__card">
-                        <img src="./img/page1_pic1.jpg" alt="">
+                    <div class="serviceSlider__card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="7000">
+                        <img src="./img/page1_pic2.jpg" alt="">
                         <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
                     </div>
-                    <div class="serviceSlider__card">
-                        <img src="./img/page1_pic1.jpg" alt="">
+                    <div class="serviceSlider__card" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="7000">
+                        <img src="./img/page1_pic3.jpg" alt="">
                         <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum</p>
                     </div>
-
-
                 </div>
+
+
+                <div class="serviceSlider__controls" id="homeservice__controls">
+                    <a  class="prev__home" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="7000">←</a>
+                    <a  class="next__home" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="7000">→</a>    
+                </div>
+
             </div>
         </div>
       </section>
+      
       <!-- HOME ABOUT -->
       <section class="homeAbout">
         <div class="container">
             <div class="homeAbout__wrapper">
-                <div class="homeAbout__what">
+                <div class="homeAbout__what" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                     <h2>WHAT WE DO</h2>
                     <span class="line"></span>
 				    <p>Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia esroin dictum elemenelit. Fusce euismod consequat antrem ipsm door sit amet coectetuer adipiscing elit. Pellentesque sed dololiquam cong.</p>
@@ -173,7 +184,7 @@
                     <p>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi aliquet sit amet euismod in auctor ut ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor lobortis quis lobortis dignissim pulvinar ac lorem. Vestibulum sed ante.</p>
                 </div>
 
-                <div class="homeAbout__why">
+                <div class="homeAbout__why" data-aos="fade-down" data-aos-anchor-placement="center-bottom">
                     <h2>WHY US?</h2>
                     <span class="line"></span>
                     <p>Cubilipende sollicitudineied leo pharea aumennec in velit veaugn erase dialor innia est. Proin dictum elemum velit terdpibus sceleue vitaepeecon eoc in vel ipsum auctorulvinaroin ullamcorper u et felisestiulis lacinia est.</p>
@@ -185,18 +196,23 @@
             </div>
         </div>
       </section>
-
+      <!-- HOME APPOINTMENT -->
       <div class="homeAppointment">
         <div class="container">
             <div class="homeAppointment__wrapper">
-                <h2>NO BETTER CAR SERVICE ANYWHERE</h2>
+                <h2 data-aos="fade-up">NO BETTER CAR SERVICE ANYWHERE</h2>
 
-                <div class="homeAppointment__button">
+                <div class="homeAppointment__button" data-aos="fade-up">
                     <a href="" class="btn bg--primary">REQUEST AN APPOINTMENT</a>
                     <i class="fa-regular fa-calendar-days"></i> 
                 </div>
             </div>
         </div>
+      </div>
+      
+      <!-- BUTTON UP -->
+      <div class="button__up">
+        <a href="#"><i class="fa-solid fa-chevron-up"></i></a>
       </div>
 
       <!-- FOOTER -->
@@ -204,7 +220,7 @@
         <div class="container">
             <div class="footer__wrapper">
 
-                <div class="footer__social">
+                <div class="footer__social" data-aos="fade-right">
                     <p>Car service © 2024 • <a href="./privacy.html">Privacy Policy</a></p>
                     <ul class="footer__icons">
                         <li><a href=""><i class="fa-brands fa-google"></i></a></li>
@@ -214,7 +230,7 @@
                     </ul>
                 </div>
 
-                <div class="footer__location">
+                <div class="footer__location" data-aos="fade-up">
                     <p>
                         9863 - 9867 Mill Road,
                         Cambridge, MG09 99HT
@@ -227,18 +243,24 @@
                     </p>
                 </div>
 
-                <div class="footer__maps">
+                <div class="footer__maps" data-aos="fade-left">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.788160216418!2d120.9936143757407!3d14.554103378212098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c965aa9b8243%3A0xabb4d078626156ed!2sMcDonald&#39;s%20Buendia%20Pasay!5e0!3m2!1sen!2sph!4v1720140585112!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
       </footer>
 
-
       <!-- slider -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
       <!-- slider -->
       <script src="./js/slider.js"></script>
+      <script src="./js/homeSlider.js"></script>
       <script src="./js/toggleMenu.js"></script>
+
+      <!-- animation js -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>

@@ -15,10 +15,15 @@
         p {
             margin-bottom: 2rem;
             color: #89888c;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .8rem;
 
             a{
                 color: #89888c;
                 transition: 0.3s ease;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: .8rem;
+
                 &:hover{
                     color: $clr-primary;
                     transition: 0.3s ease;
@@ -28,7 +33,7 @@
     }
     &__icons {
         display: flex;
-        gap: 1rem;
+        gap: .5rem;
 
 
         li {
@@ -56,6 +61,11 @@
         p{
             color: #89888c;
             width: 11rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .8rem;
+            font-weight: 500;
+
+
             &:nth-child(2){
                 margin-top: 33px;
             }
@@ -66,6 +76,25 @@
         iframe{
             height: 20rem;
             width: 45rem;
+        }
+    }
+}
+
+.button__up{
+    position: fixed;
+    bottom: 3.6rem;
+    right: 10.5rem;
+    a{
+        color: $clr-light;
+        border: 2px solid $clr-light;
+        padding: 1rem;
+        border-radius: 50%;
+        transition: 0.3s ease;
+        font-size: .7rem;
+        &:hover{
+            background-color: $clr-primary;
+            border: 2px solid $clr-primary;
+            transition: 0.3s ease;
         }
     }
 }

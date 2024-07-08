@@ -1,5 +1,13 @@
-let x = "";
+// function myFunction() {
+//     document.getElementById("myForm").reset();
+//   }
 
-document.getElementById("btn-clear").onclick = function(){
-    document.getElementById("textinput").value = x;
-}
+  const button = document.getElementById('alert');
+  button.addEventListener('click', function() {
+    alert('Sent!');
+  });
+
+  const clear = document.getElementById('clear');
+  button.addEventListener('click', function() {
+    document.getElementById("myForm").reset();
+  });

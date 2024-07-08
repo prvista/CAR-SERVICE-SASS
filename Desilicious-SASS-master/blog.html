@@ -6,7 +6,11 @@
     <title>Car Services Blog</title>
     <link rel="stylesheet" href="../dist/css/main.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="icon" href="./img/logo.png">
+    <link rel="icon" href="./img/logo.ico">
+
+
+    <!-- animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg--dark">
     <!-- header -->
@@ -18,7 +22,7 @@
                 </div>
 
                 <nav>
-                    <ul class="header__nav">
+                    <ul class="header__nav" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">
                         <li><a href="./index.html">HOME</a></li>
                         <li><a href="./about.html">ABOUT</a></li>
                         <li><a href="./services.html">SERVICE</a></li>
@@ -36,17 +40,17 @@
             </div>
         </div>
     </header>
-
+    <!-- blog -->
     <section class="blog">
         <div class="container">
             <div class="blog__title">
                 <h2 class>BLOG</h2>
-                <span class="line"></span>
+                <span class="line--light-dark"></span>
             </div>
 
             <div class="blog__wrapper">
 
-                <div class="blog__card">
+                <div class="blog__card" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="700">
                     <div class="blog__date">
                         <h2>25</h2>
                         <h3>JULY</h3>
@@ -58,9 +62,9 @@
                         <a href="" class="btn bg--primary">MORE</a>
                     </div>
                 </div>
-                <span class="line"></span>
+                <span class="line--light-dark"></span>
 
-                <div class="blog__card">
+                <div class="blog__card" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="700">
                     <div class="blog__date">
                         <h2>22</h2>
                         <h3>JULY</h3>
@@ -72,9 +76,9 @@
                         <a href="" class="btn bg--primary">MORE</a>
                     </div>
                 </div>
-                <span class="line"></span>
+                <span class="line--light-dark"></span>
 
-                <div class="blog__card">
+                <div class="blog__card" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="700">
                     <div class="blog__date">
                         <h2>17</h2>
                         <h3>JULY</h3>
@@ -86,21 +90,24 @@
                         <a href="" class="btn bg--primary">MORE</a>
                     </div>
                 </div>
-                <span class="line"></span>
+                <span class="line--light-dark"></span>
                 
-                <div class="blog__button p--2">
+                <div class="blog__button mt--3"  data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="700">
                     <a href="" class="btn bg--primary">OLDER ENTRIES</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- FOOTER -->
+    <!-- button up -->
+    <div class="button__up">
+        <a href="#"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+    <!-- footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
 
-                <div class="footer__social">
+                <div class="footer__social" data-aos="fade-right">
                     <p>Car service © 2024 • <a href="./privacy.html">Privacy Policy</a></p>
                     <ul class="footer__icons">
                         <li><a href=""><i class="fa-brands fa-google"></i></a></li>
@@ -110,7 +117,7 @@
                     </ul>
                 </div>
 
-                <div class="footer__location">
+                <div class="footer__location" data-aos="fade-up">
                     <p>
                         9863 - 9867 Mill Road,
                         Cambridge, MG09 99HT
@@ -123,12 +130,17 @@
                     </p>
                 </div>
 
-                <div class="footer__maps">
+                <div class="footer__maps" data-aos="fade-left">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.788160216418!2d120.9936143757407!3d14.554103378212098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c965aa9b8243%3A0xabb4d078626156ed!2sMcDonald&#39;s%20Buendia%20Pasay!5e0!3m2!1sen!2sph!4v1720140585112!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </footer>
     
+      <!-- animation js -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>

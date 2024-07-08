@@ -26,29 +26,7 @@ var slider = tns({
 
 
 
-var slider = tns({
-    container: ".serviceSlider__content",
-    items: 3,
-    speed:700,
-    gutter: 100,
-    slideBy: "page",
-    autoplay: false,
-    navPosition: "bottom",
-    containerControls: "#controls",
-    prevButton: ".prev",
-    nextButton: ".next",
-    axis: "horizontal",
-    mode: "carousel",
 
-    responsive: {
-        1250: {
-            items: 3,
-        },
 
-        200: {
-            items:1,
-        },
-    }
-});
 
 

@@ -3,7 +3,7 @@
 
 .contact {
     &__wrapper{
-        background-color: $clr-light;
+        background-color: $clr-dark-light;
         @include grid (2, 0);
         padding: 7rem 4rem 6rem 4rem;
     }
@@ -16,8 +16,10 @@
             font-weight: 500;
             margin-top: 3rem;
             cursor: pointer;
+            transition: 0.3s ease;
             &:hover{
                 color: $clr-dark;
+                transition: 0.3s ease;
             }
         }
 
@@ -57,6 +59,8 @@
             padding: 1rem;
             color: $clr-dark;
             height: 2.5rem;
+            font-family:Arial, Helvetica, sans-serif;
+
 
             &:focus{
                 box-shadow: rgb(250, 133, 138, 0.3) 0px 3px 24px;
@@ -67,23 +71,27 @@
             }
         }
 
-        textarea {
+        textarea, active {
             border: 1px solid #d9d9db;
             border-radius: 4px;
             box-sizing: border-box;
             background: transparent;
             padding: 1rem 1rem;
-            max-width: 40rem;
-            min-width: 40rem;
-            width: 70rem;
+            // max-width: 40rem;
+            // min-width: 40rem;
+            // width: 70rem;
             height: 12rem;
-            max-height: 20rem;
+            // max-height: 20rem;
             margin: 1rem 0;
             color: $clr-dark;
             resize: none;
+            font-family:Arial, Helvetica, sans-serif;
+
 
             &:focus{
                 box-shadow: rgb(250, 133, 138, 0.3) 0px 3px 24px;
+                font-family:Arial, Helvetica, sans-serif;
+
 
                 &::placeholder{
                     color: #d9d9db;
@@ -95,7 +103,7 @@
     &__button{
         display: flex;
         flex-direction: row;
-        gap: 1.2rem;
+        gap: 1.5rem;
         justify-content: right;
         margin-top: 4rem;
 

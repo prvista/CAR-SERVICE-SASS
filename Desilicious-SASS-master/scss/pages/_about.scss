@@ -27,7 +27,7 @@
 
         p{
             padding: 1rem 0;
-            margin-bottom: 3rem;
+            // margin-bottom: 3rem;
         }
 
         .btn {
@@ -35,6 +35,9 @@
             font-weight: 500;
         }
 
+        .btn__feature{
+            margin-top: 2rem;
+        }
 
     }
 
@@ -76,7 +79,7 @@
     }
 
     &__wrapper{
-        background-color: $clr-light;
+        background-color: $clr-dark-light;
         padding: 4rem 5rem 9rem 5rem;
         @include grid(4, 2rem)
     }
@@ -85,6 +88,10 @@
         small{
             color: $clr-primary;
             cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: .8rem;
+
+            
 
             &:hover{
                 color: $clr-dark;
@@ -93,7 +100,8 @@
         }
 
         p{
-            color: $clr-dark;
+            color: $clr-light-dark;
+            font-family: Arial, Helvetica, sans-serif;
             span{
                 cursor: pointer;
                 text-decoration: underline;
@@ -102,6 +110,10 @@
                     color: $clr-primary;
                 }
             }
+        }
+
+        img{
+            margin-bottom: 1.5rem;
         }
     }
 }
